@@ -79,13 +79,13 @@ class MarvelCell: UITableViewCell {
     // MARK: - Layout settings
     private func setupLayout() {
         NSLayoutConstraint.activate([
-            firstImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
-            firstImage.topAnchor.constraint(equalTo: topAnchor, constant: 5),
-            firstImage.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5),
-            firstImage.heightAnchor.constraint(equalTo: firstImage.widthAnchor, multiplier: 0.69),
+            firstImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Metric.leadingValueCell),
+            firstImage.topAnchor.constraint(equalTo: topAnchor, constant: Metric.topValueImageCell),
+            firstImage.bottomAnchor.constraint(equalTo: bottomAnchor, constant: Metric.bottomValueCell),
+            firstImage.heightAnchor.constraint(equalTo: firstImage.widthAnchor, multiplier: Metric.heightImageMultiplierCell),
 
-            firstLabel.leadingAnchor.constraint(equalTo: firstImage.trailingAnchor, constant: 15),
-            firstLabel.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: -5),
+            firstLabel.leadingAnchor.constraint(equalTo: firstImage.trailingAnchor, constant: Metric.leadingValueCell),
+            firstLabel.trailingAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.trailingAnchor, constant: Metric.bottomValueCell),
             firstLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
 
         ])

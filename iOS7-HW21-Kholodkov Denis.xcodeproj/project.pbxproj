@@ -11,7 +11,6 @@
 		921DBCA729129B97006FD092 /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921DBCA629129B97006FD092 /* Metric.swift */; };
 		921DBCA92912A06A006FD092 /* ModelMarvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921DBCA82912A06A006FD092 /* ModelMarvel.swift */; };
 		925A139C29125A8B009ED847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A139B29125A8B009ED847 /* AppDelegate.swift */; };
-		925A139E29125A8B009ED847 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A139D29125A8B009ED847 /* SceneDelegate.swift */; };
 		925A13A029125A8B009ED847 /* MainAlamofireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A139F29125A8B009ED847 /* MainAlamofireController.swift */; };
 		925A13A529125A90009ED847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925A13A429125A90009ED847 /* Assets.xcassets */; };
 		925A13A829125A90009ED847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925A13A629125A90009ED847 /* LaunchScreen.storyboard */; };
@@ -26,7 +25,6 @@
 		921DBCA82912A06A006FD092 /* ModelMarvel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMarvel.swift; sourceTree = "<group>"; };
 		925A139829125A8B009ED847 /* iOS7-HW21-Kholodkov Denis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS7-HW21-Kholodkov Denis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		925A139B29125A8B009ED847 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		925A139D29125A8B009ED847 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		925A139F29125A8B009ED847 /* MainAlamofireController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAlamofireController.swift; sourceTree = "<group>"; };
 		925A13A429125A90009ED847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		925A13A729125A90009ED847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				925A139B29125A8B009ED847 /* AppDelegate.swift */,
-				925A139D29125A8B009ED847 /* SceneDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -280,7 +277,6 @@
 				921DBCA92912A06A006FD092 /* ModelMarvel.swift in Sources */,
 				92D3EDEC29159B8200725FEC /* DescriptionViewController.swift in Sources */,
 				92D3EDEA2915972D00725FEC /* ImageSize.swift in Sources */,
-				925A139E29125A8B009ED847 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

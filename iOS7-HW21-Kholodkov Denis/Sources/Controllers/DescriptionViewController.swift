@@ -74,18 +74,18 @@ class DescriptionViewController: UIViewController {
     // MARK: - Setup Layout
     func setupLayaout() {
         NSLayoutConstraint.activate([
-            secondImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
-            secondImage.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
-            secondImage.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
-            secondImage.widthAnchor.constraint(equalTo: secondImage.heightAnchor, multiplier: 0.85),
+            secondImage.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: Metric.topValue),
+            secondImage.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: Metric.leadingValueImage),
+            secondImage.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: Metric.trailingValueImage),
+            secondImage.widthAnchor.constraint(equalTo: secondImage.heightAnchor, multiplier: Metric.multiplierValueImage),
             
-            nameLabel.topAnchor.constraint(equalTo: secondImage.bottomAnchor, constant: 10),
-            nameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 15),
-            nameLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -15),
+            nameLabel.topAnchor.constraint(equalTo: secondImage.bottomAnchor, constant: Metric.topValue),
+            nameLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: Metric.leadingValueLabel),
+            nameLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: Metric.trailingValueLabel),
             
-            descriptionLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 10),
-            descriptionLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 15),
-            descriptionLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -15)
+            descriptionLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: Metric.topValue),
+            descriptionLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: Metric.leadingValueLabel),
+            descriptionLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: Metric.trailingValueLabel)
         ])
     }
 }
