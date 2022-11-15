@@ -11,10 +11,14 @@
 		921DBCA729129B97006FD092 /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921DBCA629129B97006FD092 /* Metric.swift */; };
 		921DBCA92912A06A006FD092 /* ModelMarvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921DBCA82912A06A006FD092 /* ModelMarvel.swift */; };
 		925A139C29125A8B009ED847 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A139B29125A8B009ED847 /* AppDelegate.swift */; };
-		925A13A029125A8B009ED847 /* MainAlamofireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A139F29125A8B009ED847 /* MainAlamofireController.swift */; };
 		925A13A529125A90009ED847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925A13A429125A90009ED847 /* Assets.xcassets */; };
 		925A13A829125A90009ED847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925A13A629125A90009ED847 /* LaunchScreen.storyboard */; };
 		925A13B6291279D2009ED847 /* MarvelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925A13B5291279D2009ED847 /* MarvelCell.swift */; };
+		92A3CCBD2918F22D0092A761 /* BaseViewElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3CCBC2918F22D0092A761 /* BaseViewElements.swift */; };
+		92A3CCBF2918FA970092A761 /* MarvelTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3CCBE2918FA970092A761 /* MarvelTableView.swift */; };
+		92A3CCC12918FACE0092A761 /* MarvelDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3CCC02918FACE0092A761 /* MarvelDescriptionView.swift */; };
+		92A3CCC3291AE0A10092A761 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3CCC2291AE0A10092A761 /* TableController.swift */; };
+		92A3CCC6291AE4570092A761 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A3CCC5291AE4570092A761 /* NetworkLayer.swift */; };
 		92D3EDEA2915972D00725FEC /* ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3EDE92915972D00725FEC /* ImageSize.swift */; };
 		92D3EDEC29159B8200725FEC /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3EDEB29159B8200725FEC /* DescriptionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -25,11 +29,15 @@
 		921DBCA82912A06A006FD092 /* ModelMarvel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMarvel.swift; sourceTree = "<group>"; };
 		925A139829125A8B009ED847 /* iOS7-HW21-Kholodkov Denis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS7-HW21-Kholodkov Denis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		925A139B29125A8B009ED847 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		925A139F29125A8B009ED847 /* MainAlamofireController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAlamofireController.swift; sourceTree = "<group>"; };
 		925A13A429125A90009ED847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		925A13A729125A90009ED847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		925A13A929125A90009ED847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		925A13B5291279D2009ED847 /* MarvelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCell.swift; sourceTree = "<group>"; };
+		92A3CCBC2918F22D0092A761 /* BaseViewElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewElements.swift; sourceTree = "<group>"; };
+		92A3CCBE2918FA970092A761 /* MarvelTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTableView.swift; sourceTree = "<group>"; };
+		92A3CCC02918FACE0092A761 /* MarvelDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDescriptionView.swift; sourceTree = "<group>"; };
+		92A3CCC2291AE0A10092A761 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		92A3CCC5291AE4570092A761 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		92D3EDE92915972D00725FEC /* ImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSize.swift; sourceTree = "<group>"; };
 		92D3EDEB29159B8200725FEC /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		D08DC0E72E8FAEED5CD7DF58 /* Pods-iOS7-HW21-Kholodkov Denis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS7-HW21-Kholodkov Denis.debug.xcconfig"; path = "Target Support Files/Pods-iOS7-HW21-Kholodkov Denis/Pods-iOS7-HW21-Kholodkov Denis.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,9 +95,10 @@
 			isa = PBXGroup;
 			children = (
 				925A13B129125AE7009ED847 /* App */,
-				925A13B429126738009ED847 /* Cell */,
 				925A13B229125AFE009ED847 /* Controllers */,
+				92A3CCBB2918F1E80092A761 /* View */,
 				925A13B329126728009ED847 /* Model */,
+				92A3CCC4291AE41D0092A761 /* NetworkLayer */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -116,7 +125,7 @@
 		925A13B229125AFE009ED847 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				925A139F29125A8B009ED847 /* MainAlamofireController.swift */,
+				92A3CCC2291AE0A10092A761 /* TableController.swift */,
 				92D3EDEB29159B8200725FEC /* DescriptionViewController.swift */,
 			);
 			path = Controllers;
@@ -125,6 +134,7 @@
 		925A13B329126728009ED847 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				925A13B429126738009ED847 /* Cell */,
 				921DBCA82912A06A006FD092 /* ModelMarvel.swift */,
 				92D3EDE92915972D00725FEC /* ImageSize.swift */,
 			);
@@ -137,6 +147,24 @@
 				925A13B5291279D2009ED847 /* MarvelCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		92A3CCBB2918F1E80092A761 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92A3CCBC2918F22D0092A761 /* BaseViewElements.swift */,
+				92A3CCBE2918FA970092A761 /* MarvelTableView.swift */,
+				92A3CCC02918FACE0092A761 /* MarvelDescriptionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92A3CCC4291AE41D0092A761 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				92A3CCC5291AE4570092A761 /* NetworkLayer.swift */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 		94127B94BD2842040BB587EF /* Frameworks */ = {
@@ -270,13 +298,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				925A13A029125A8B009ED847 /* MainAlamofireController.swift in Sources */,
+				92A3CCC6291AE4570092A761 /* NetworkLayer.swift in Sources */,
 				925A139C29125A8B009ED847 /* AppDelegate.swift in Sources */,
 				921DBCA729129B97006FD092 /* Metric.swift in Sources */,
 				925A13B6291279D2009ED847 /* MarvelCell.swift in Sources */,
+				92A3CCBF2918FA970092A761 /* MarvelTableView.swift in Sources */,
+				92A3CCC12918FACE0092A761 /* MarvelDescriptionView.swift in Sources */,
 				921DBCA92912A06A006FD092 /* ModelMarvel.swift in Sources */,
 				92D3EDEC29159B8200725FEC /* DescriptionViewController.swift in Sources */,
 				92D3EDEA2915972D00725FEC /* ImageSize.swift in Sources */,
+				92A3CCBD2918F22D0092A761 /* BaseViewElements.swift in Sources */,
+				92A3CCC3291AE0A10092A761 /* TableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

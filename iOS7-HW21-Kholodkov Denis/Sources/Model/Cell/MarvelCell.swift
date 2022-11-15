@@ -7,32 +7,16 @@
 
 import UIKit
 
-class MarvelCell: UITableViewCell {
+protocol cellProtocol {
+    func setDataToComic(element: Comic?)
+}
+
+class MarvelCell: UITableViewCell, cellProtocol {
 
     // MARK: - Varibles
     static let identifier = "MarvelCell"
+    let networkLayer = NetworkLayer()
 
-    var element: Comic? {
-        didSet {
-            firstLabel.text = element?.title
-            DispatchQueue.global().async {
-                guard let imagePath = self.getURLImg(path: self.element?.thumbnail?.path,
-                                                     size: .small,
-                                                     ext: self.element?.thumbnail?.imageExtension),
-                      let imageURL = URL(string: imagePath),
-                      let imageData = try? Data(contentsOf: imageURL) else {
-                    DispatchQueue.main.async {
-                        self.firstImage.image = UIImage(named: "default image")
-                    }
-                    return
-                }
-                DispatchQueue.main.async {
-                    //  print("\(imageURL)")
-                    self.firstImage.image = UIImage(data: imageData)
-                }
-            }
-        }
-    }
 
     // MARK: - UI Elements
     private lazy var firstImage: UIImageView = {
@@ -50,6 +34,7 @@ class MarvelCell: UITableViewCell {
         return label
     }()
 
+    // MARK: - initializers
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: MarvelCell.identifier)
         backgroundColor = .white
@@ -57,18 +42,16 @@ class MarvelCell: UITableViewCell {
         setupLayout()
     }
 
-    // MARK: - Functions
-    func getURLImg(path: String?, size: ImageSize, ext: String?) -> String? {
-        if let path = path, let ext = ext {
-            let url = path + size.set + ext
-            //  print(url)
-            return url
-        }
-        return nil
-    }
-
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    // MARK: - Functions
+    func setDataToComic(element: Comic?) {
+        networkLayer.configurateComic(element: element,
+                                      firstLabel,
+                                      nil,
+                                      firstImage)
     }
 
     private func setupHierarchy() {
